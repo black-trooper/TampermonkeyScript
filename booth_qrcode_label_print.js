@@ -1,6 +1,5 @@
 // ==UserScript==
 // @name         BoothQRコード印刷
-// @namespace    http://tampermonkey.net/
 // @version      2024-12-01
 // @description  Boothの注文画面から50x30のラベルを印刷するスクリプト
 // @author       Nobuki Inoue
@@ -23,8 +22,8 @@
             #label-print-content {
                 display: none;
             }
-            /*@media print
-            {*/
+            @media print
+            {
                 /* すべての要素を非表示 */
                 body * {
                     display: none;
